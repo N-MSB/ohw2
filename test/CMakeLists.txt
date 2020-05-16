@@ -11,6 +11,12 @@ add_subdirectory(
 # Test target
 add_executable(test_sort test.cpp)
 
+set_target_properties(
+    test_sort PROPERTIES
+    CXX_STANDARD 17
+    CXX_STANDARD_REQUIRED ON
+)
+
 # Add src to the include directories for the test target
 target_include_directories(
     test_sort PRIVATE
