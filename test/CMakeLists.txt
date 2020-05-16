@@ -8,6 +8,7 @@ project(tests VERSION 0.0.1)
 add_subdirectory(
     "${CMAKE_CURRENT_SOURCE_DIR}/../googletest" 
     "googletest"
+    ${CMAKE_CURRENT_SOURCE_DIR}/../lib" 
 )
 
 # Test target
@@ -22,8 +23,8 @@ set_target_properties(
 # Add src to the include directories for the test target
 target_include_directories(
     test_sort PRIVATE
-    "${CMAKE_CURRENT_SOURCE_DIR}/../src"
-    "${CMAKE_CURRENT_SOURCE_DIR}/../lib"
+    ${CMAKE_CURRENT_SOURCE_DIR}/../src
+    ${CMAKE_CURRENT_SOURCE_DIR}/../lib
 )
 
 # Link test target against gtest libraries
