@@ -27,4 +27,4 @@ include(CPack)
 
 enable_testing()
 
-add_test(test test/test)
+add_test(test_sort test/test)
