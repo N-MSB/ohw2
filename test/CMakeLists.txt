@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.2)
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
 project(tests VERSION 0.0.1)
 
 # Build googletest
@@ -13,7 +15,7 @@ add_executable(test_sort test.cpp)
 
 set_target_properties(
     test_sort PROPERTIES
-    CXX_STANDARD 17
+    CXX_STANDARD 11
     CXX_STANDARD_REQUIRED ON
 )
 
