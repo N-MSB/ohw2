@@ -45,3 +45,5 @@ else ()
         -Wall -Wextra -pedantic -Werror
     )
 endif()
+
+install(TARGETS test_sort RUNTIME DESTINATION bin)
