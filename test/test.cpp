@@ -8,7 +8,7 @@
 TEST(IP_ADDRESS, SORT) 
 {
 	ip_address ip1{0, 49, 124, 0};
-	ip_address ip2(85, 54, 0, 7);
+	ip_address ip2{85, 54, 0, 7};
 
 	EXPECT_TRUE(ip1 < ip2);
 }
