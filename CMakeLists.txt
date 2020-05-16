@@ -27,4 +27,5 @@ include(CPack)
 
 enable_testing()
 
-add_test(test_sort test/test)
+add_test(test_sort ${CMAKE_BINARY_DIR}/test/test_sort)
+
