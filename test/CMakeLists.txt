@@ -28,7 +28,7 @@ target_include_directories(
 
 # Link test target against gtest libraries
 target_link_libraries(
-    test_sort PRIVATE
+    test_sort PUBLIC
     lib
     gtest gtest_main
 )
