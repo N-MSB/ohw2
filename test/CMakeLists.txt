@@ -8,7 +8,7 @@ project(tests VERSION 0.0.1)
 add_subdirectory(
     "${CMAKE_CURRENT_SOURCE_DIR}/../googletest" 
     "googletest"
-    ${CMAKE_CURRENT_SOURCE_DIR}/../lib" 
+    "${CMAKE_CURRENT_SOURCE_DIR}/../lib" 
 )
 
 # Test target
