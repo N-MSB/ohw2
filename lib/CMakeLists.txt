@@ -15,6 +15,7 @@ target_include_directories(
     ip_address
     PUBLIC
     ${CURRENT_BINARY_DIR}
+    ${CURRENT_SOURCE_DIR}/../test
 )
 
 if(MSVC)
