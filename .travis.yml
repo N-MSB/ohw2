@@ -1,5 +1,6 @@
 language: cpp
 before_script:
+- apt-cache search gobject
 #- sudo apt-get install libboost-test-dev -y
 #- sudo apt-get install libssl-dev liblib-dev
 - echo "deb http://archive.ubuntu.com/ubuntu xenial main universe" | sudo tee -a /etc/apt/sources.list
